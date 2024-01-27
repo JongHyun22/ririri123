@@ -1,0 +1,281 @@
+@charset "utf-8";
+
+/* 폰트들
+    나눔명조
+    font-family: 'Nanum Myeongjo', serif;
+    노토산스
+    font-family: 'Noto Sans KR', sans-serif;
+
+    EB garamond
+    font-family: 'EB Garamond', serif;
+
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    /*부모에게 글씨색상을 상속받은 값을 사용해라. 다른태그안의 글씨와 색상변경하는방법이 같아진다.*/
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
+}
+
+/*header*/
+#header {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}   
+
+#gnb {
+    display: flex;
+    font-size: 18px;
+}
+
+#gnb li {
+    padding: 25px 20px;
+}
+
+/*mainbanner*/
+.mainbanner img {
+    width: 100%;
+}
+
+.mbnext,
+.mbprev {
+    color: #fff;
+}
+
+.mbpag span {
+    background-color: #fff;
+}
+
+/*best_item*/
+#best_item {
+    width: 1320px;
+    margin: 0 auto;
+    padding-bottom: 100px;  
+}
+
+.best img {
+    width: 100%;
+}
+
+.best {
+    padding-bottom: 100px;
+}
+
+.sub_title {
+    padding-top: 100px;
+    padding-bottom: 15px;
+    text-align: center;
+    color: burlywood;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 50px;
+}
+
+.title {
+    color: #111;
+    text-align: center;
+    padding-bottom: 50px;
+ㄴ
+}
+
+.best h3 {
+    font-size: 20px;
+    color: #111;
+    padding: 30px 0;
+    font-weight: normal;
+}
+
+.best p span {
+    color: burlywood;
+}
+
+.best h2 {
+    color: #111;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 40px;
+    line-height: 40px;
+    padding-top: 30px;
+}
+
+.best h2 span {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+/*swiper-pagination span 태그의 클래스가 swiper-pagination-bullet이라는 공통 클래스를 가지므로, 이 클래스에 스타일을 주는것과 swiper-pagination span에 주는것이 같은곳에 주는 것이다.*/
+.best .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    background-color: #111;
+}
+
+/*md_pick*/
+#md_pick {
+    background: url(./images/md_bg.jpg) no-repeat center top;
+    background-size: cover;
+}
+
+.md_pick_inner {
+    width: 1320px;
+    margin: 0px auto;
+}
+
+.md_pick_inner ul {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+.text {
+    width: 730px;
+}
+
+.img {
+    width: 540px;
+}
+
+.name {
+    color: burlywood;
+    padding-top: 50px;
+    padding-bottom: 15px;
+}
+
+.text h2 {
+    color: #111;
+    font-size: 35px;
+    padding-bottom: 30px;
+}
+
+.btn {
+    padding-top: 30px;
+}
+
+.btn a {
+    display: inline-block;
+    border: 1px solid burlywood;
+    padding: 10px 30px;
+}
+
+/*bg_att*/
+#bg_att {
+    background: url(./images/gallery-bg.jpg) no-repeat center top fixed;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bg_att h1 {
+    color: #111;
+    font-size: 45px;
+    font-weight: 500;
+    letter-spacing: 10px;
+    line-height: 45px;
+}
+
+.EBgramond {
+    font-family: 'EB Garamond', serif;
+}
+
+/*new_art*/
+#new_art {
+    width: 1320px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+#new_art ol {
+    display: flex;
+    justify-content: space-between;
+}
+
+#new_art ol li {
+    width: 420px;
+    position: relative;
+    /*wbox포지션의 기준*/
+    padding-bottom: 150px;
+}
+
+.wbox {
+    background-color: #fff;
+    width: 380px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.new_name {
+    color: burlywood;
+}
+
+.wbox h2 {
+    padding: 10px 0;
+}
+
+.btn2 {
+    padding-top: 10px;
+}
+
+#new_art ol li:hover .wbox {
+    bottom: 100px;
+    transition: all 1s;
+}
+
+/*footer*/
+#footer {
+    background-color: #333;
+}
+
+.footer_inner {
+    width: 1320px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.footer_inner ul {
+    display: flex;
+}
+
+.footer_inner ul li {
+    padding-right: 25px;
+}
+
+.footer_inner p {
+    padding-top: 30px;
+}
+
+.qq {
+    font-size: 25px;
+}
+
+.qq1{
+    font-size:30px;
+}
+
